@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title >  You Tube!</title>
+    <link rel = "icon" href ="icon.jpg" type = "image/x-icon">  <!-- Here we are adding the youtube icon with title-->
+
+
+  </head>
+  <style>
+#menubar{
+padding: 16px;
+align-items: center;
+
+}
+#signin{
+
+color: blue;
+border-color: blue;
+}
+
+#signin:hover{
+  background-color:rgb(117, 117, 212);
+  
+  color:black;
+}
+
+
+
+
+
+#videosection{
+
+padding-left: 80px;
+padding-right: 80px;
+padding-top: 20px;
+padding-bottom: 40px;
+}
+
+#belowvideo{
+
+color: #606060;
+font-family: Arial, Helvetica, sans-serif;
+}
+#subscribe{
+
+background-color: red;
+float: right;
+color: white;
+}
+
+
+
+#imgcm{
+
+border-radius: 50%;
+width:20px;
+height: 20px;
+}
+  </style>
+
+  <body>
+
+   <!--<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 200px; height: 200px;"><g class="style-scope yt-icon"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" class="style-scope yt-icon"></path></g></svg>
+--> 
+    <div class="container-fluid">
+        <div class="row row-cols" id="menubar">
+          
+          <div class="col-sm-2" >
+           <!-- <li><a href="#" class="btn-social bg-facebook"><i class="fa fa-facebook"></i>facebook</a></li>
+            
+-->
+           <!--  <a style="display: inline-block;">-->
+                <img src="youtube.jpg" alt="..." style="width: 24px;height: 24px;"> Youtube </div>
+              <div class="  col-sm-6"> <input id="comm" type="search" placeholder="Search" style="margin-top: 5px;width: 650px; ">
+              </div>
+              <div class="col-sm-2">
+                <img src="sea.jpg"style="width: 28px; height: 28px;  ">
+                
+             
+              
+              <!--  <ul class="list-group"></ul>
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">A fourth item</li>
+                  <li class="list-group-item">And a fifth one</li>
+                </ul>
+              -->
+
+              </div >
+              
+
+              <div  class="col-sm-2">
+                <button id="signin" type="button" style="width: 60px;height: 27px;margin-right: 10px;" >SignIn</button>
+              </div>
+               
+           <!-- <img src="youtube.jpg" alt="...">-->
+         
+        
+        </div>
+
+        <div class="row" id="videosection">
+          <div class="col-8">
+          <!-- <div class="card" style=" margin-top: 20px;"> -->
+            
+            
+            <video id="video" height="420" controls="controls" poster="1.jpg">
+              
+              <source src="background.mp4.mp4" type="video/mp4">
+
+               
+             
+            Your browser does not support the video tag.
+            </video>
+            
+           <p id="title" >New Haryanvi Songs Haryanvi 2020 | Khasa Aala Chahar | </p>
+<!-- x          <div>
+          <button type="button" style="background-color:red;color: white; width: 100px;height: 40px;margin-top: 70px ;float: right;margin-right: -120px;" >SUBSCRIBE</button>
+        </div> -->
+        <p id="belowvideo">
+
+          75,015,875 views•Sep 19, 2020
+          <span style="margin-right: 50px;">20</span>
+          <img  src="dislike.jpg" alt="" style="width: 24px;height: 24px; margin-right: 0px;float: right;">
+          <span style="float: right;">20</span>
+          <img src="like.jpg" alt="" style="width: 24px;height: 24px;float: right;">
+            
+
+
+        </p>
+         <hr>
+
+        <p > T-Series <br> All songs related to T-Series
+        
+        <button id="subscribe" onclick="change()">
+          SUBSCRIBE
+        </button>
+        
+        
+        </p>
+        <hr>
+        <p>Add a public comment :</p>
+        <hr>
+
+        <div  id="first"  >
+           
+          
+
+        </div>
+        <img id="imgcm" src="c.png">
+        <hr>
+        <div  id="second" >
+
+        
+        </div>
+        <img id="imgcm" src="c.png">
+        <hr>
+        <div  id="third" >
+         
+
+        </div>
+        <img id="imgcm" src="c.png">
+
+
+
+        </div>
+          
+        
+
+        <div class="col-4 ">
+      <div class="row">
+          <div class="col-4">
+        <!-- <div class="card" style="width: 200px ; margin-top: 20px;margin-left: 150px;"> -->
+            <img  src="im2.jpg"  class="img-fluid" alt="..." onclick="song()">
+<!-- </div>             -->
+          </div>
+            
+          <div class="col-6">
+            <p> Keh Len De | Das Ki Karaan Tere Te Mara |Kaka| </p>  
+            
+          </div>
+            
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-4">
+        <!-- <div class="card" style="width: 200px ; margin-top: 20px;margin-left: 150px;"> -->
+            <img  src="im3.jpg"  class="img-fluid" alt="..." onclick="song1()">
+<!-- </div>             -->
+          </div>
+
+          <div class="col-6" >
+            <p > Kaka : Teeji Seat (Official Video) Aakansha </p>  
+            
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="col-4">
+        <!-- <div class="card" style="width: 200px ; margin-top: 20px;margin-left: 150px;"> -->
+            <img  src="im4.jpg"  class="img-fluid" alt="..." onclick="song2()">
+<!-- </div>             -->
+          </div>
+
+          <div class="col-6" >
+            <p > Temporary Pyar | KAKA | Darling | </p>  
+            
+          </div>
+        </div>
+       
+        <br>
+
+        <div class="row">
+          <div class="col-4">
+        <!-- <div class="card" style="width: 200px ; margin-top: 20px;margin-left: 150px;"> -->
+            <img  src="im5.jpg"  class="img-fluid" alt="..." onclick="song3()">
+<!-- </div>             -->
+          </div>
+
+          <div class="col-6" >
+            <p > Titliaan | Harrdy Sandhu | Sargun Mehta |</p>  
+            
+          </div>
+        </div>
+
+
+
+        <br>
+
+        <div class="row">
+          <div class="col-4">
+        <!-- <div class="card" style="width: 200px ; margin-top: 20px;margin-left: 150px;"> -->
+            <img  src="im6.jpg"  class="img-fluid" alt="..." onclick="song4()">
+<!-- </div>             -->
+          </div>
+
+          <div class="col-6" >
+            <p > Rahat Fateh Ali Khan - Zaroori Tha</p>  
+            
+          </div>
+        </div>
+
+
+
+
+
+        <br>
+
+        <div class="row">
+          <div class="col-4">
+        <!-- <div class="card" style="width: 200px ; margin-top: 20px;margin-left: 150px;"> -->
+            <img  src="im7.jpg"  class="img-fluid" alt="..." onclick="song5()">
+<!-- </div>             -->
+          </div>
+
+          <div class="col-6" >
+            <p > KHAAB || AKHIL || PARMISH VERMA</p>  
+            
+          </div>
+        </div>
+
+
+
+
+
+        <br>
+
+        <div class="row">
+          <div class="col-4">
+        <!-- <div class="card" style="width: 200px ; margin-top: 20px;margin-left: 150px;"> -->
+            <img  src="im8.jpg"  class="img-fluid" alt="..." onclick="song6()">
+<!-- </div>             -->
+          </div>
+
+          <div class="col-6" >
+            <p > Lyrical: Tum Hi Aana | Marjaavaan |</p>  
+            
+          </div>
+        </div>
+
+
+
+
+
+        <br>
+
+        <div class="row">
+          <div class="col-4">
+        <!-- <div class="card" style="width: 200px ; margin-top: 20px;margin-left: 150px;"> -->
+            <img  src="im9.jpg"  class="img-fluid" alt="..." onclick="song7()">
+<!-- </div>             -->
+          </div>
+
+          <div class="col-6" >
+            <p > New Punjabi Songs 2021| Kale Je Libaas Di | </p>  
+            
+          </div>
+        </div>
+
+
+
+
+        <br>
+
+        <div class="row">
+          <div class="col-4">
+        <!-- <div class="card" style="width: 200px ; margin-top: 20px;margin-left: 150px;"> -->
+            <img  src="im10.jpg"  class="img-fluid" alt="..." onclick="song8()">
+<!-- </div>             -->
+          </div>
+
+          <div class="col-6" >
+            <p > Father Saab (Full Video) | Khasa Aala Chahar |</p>  
+            
+          </div>
+        </div>
+       
+
+
+    </div>
+
+    <!-- <div class="row">
+      <div class="col-6">
+        
+        <button type="button" onclick="show()" style="width: 140px;height: 40px;"> showcomments</button>
+        
+        <ul id="com" >comment1</ul>
+      </div>
+
+
+    </div>
+     
+
+      <i class="fab fa-youtube"></i> -->
+      
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+
+      <script>
+        function song(){
+          var x=document.getElementById("video").poster='im2.jpg';
+          document.getElementById("title").innerHTML="Keh Len De | Das Ki Karaan Tere Te Mara |Kaka|";
+        }
+        function song1(){
+          var x=document.getElementById("video").poster='im3.jpg';
+          document.getElementById("title").innerHTML="Kaka : Teeji Seat (Official Video) Aakansha";
+
+
+        }
+        function song2(){
+          var x=document.getElementById("video").poster='im4.jpg';
+          document.getElementById("title").innerHTML=" Temporary Pyar | KAKA | Darling |ng no. 2";
+
+
+        }
+        function song3(){
+          var x=document.getElementById("video").poster='im5.jpg';
+          document.getElementById("title").innerHTML="Titliaan | Harrdy Sandhu | Sargun Mehta |";
+
+
+          }
+
+
+          function song4(){
+          var x=document.getElementById("video").poster='im6.jpg';
+          document.getElementById("title").innerHTML=" Rahat Fateh Ali Khan - Zaroori Tha";
+
+
+          }
+
+
+          function song5(){
+          var x=document.getElementById("video").poster='im7.jpg';
+          document.getElementById("title").innerHTML="KHAAB || AKHIL || PARMISH VERMA";
+
+
+          }
+
+          function song6(){
+          var x=document.getElementById("video").poster='im8.jpg';
+          document.getElementById("title").innerHTML="Lyrical: Tum Hi Aana | Marjaavaan |";
+
+
+          }
+
+          function song7(){
+          var x=document.getElementById("video").poster='im9.jpg';
+          document.getElementById("title").innerHTML="New Punjabi Songs 2021| Kale Je Libaas Di |";
+
+
+          }
+
+          
+          function song8(){
+          var x=document.getElementById("video").poster='im10.jpg';
+          document.getElementById("title").innerHTML="Father Saab (Full Video) | Khasa Aala Chahar |";
+
+
+          }
+
+          function change(){
+               document.getElementById("subscribe").innerHTML="SUBSCRIBED";
+
+          }
+          
+         
+
+
+
+
+
+     </script>
+
+     <script> 
+        var request = new XMLHttpRequest();
+        request.open('GET','https://ghibliapi.herokuapp.com/films',true)
+      
+        arr=["first","second","third"]
+        request.onload =function ()
+        {
+            
+            var data =JSON.parse(this.response)
+            for(var i=0;i<arr.length;i++){
+
+               document.getElementById(arr[i]).innerHTML=data[i].title;
+
+            }
+            
+           
+        }
+        request.send()
+
+     </script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+<!-- 
+    Option 2: Separate Popper and Bootstrap JS  -->
+   
+   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script> -->
+
+  </body>
+</html>   
